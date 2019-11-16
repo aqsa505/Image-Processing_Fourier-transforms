@@ -1,0 +1,25 @@
+To replicate problem 1 and 2 with this program, do the following.
+
+input.txt will have,
+1 6
+10
+40
+20
+90
+5
+30
+
+now, to do problem 1, do the following
+
+COMPILE
+gcc -o prob3 prob3.c -lm
+
+RUN Fourier Analysis
+./prob3 input.txt 0 output.txt
+
+output.txt will have fourier coefficients.
+
+RUN Fourier Synthesis
+./prob3 output.txt 1 input.txt
+
+input.txt will now have original numbers
