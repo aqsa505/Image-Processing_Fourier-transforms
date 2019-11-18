@@ -1,0 +1,36 @@
+  b) Show that list L can be reconstructed from the Fourier coefficients by adding appropriately scaled and
+			 shifted cosines. Use the results of part (a) to do the scaling and shifting. Show all hand calculations.
+
+       Fr[0] = (32.5 + 0i)*e^(i2*PI*0*0/6) + (-9.58 - 3.61i)*e^(i2*PI*0*1/6) + (8.75 + 0.72i)*e^(i2*PI*0*2/6) +
+               (-20.83 + 0i)*e^(i2*PI*0*3/6) + (8.75 - 0.72i)*e^(i2*PI*0*4/6) + (-9.58 + 3.61i)*e^(i2*PI*0*5/6)
+             =9.99
+ 
+        Fr[1] = 32.5 - 0 - 9.58*cos(PI/3) + 3.61*sin(PI/3) - i*(9.58*sin(PI/3) + 3.61cos(PI/3)) + 8.75*cos(2PI/3) -
+		0.72*sin(2PI/3) + i*(8.75*sin(2PI/3) + 0.72cos(2PI/3)) - 20.83*cos(PI) - i*20.83*sin(PI) +
+                8.75*cos(4PI/3) + 0.72*sin(4PI/3) + i*(8.75*sin(4PI/3) - 0.72cos(4PI/3)) - 9.58*cos(5PI/3) -
+		3.61*sin(5PI/3) - i*(9.58*sin(5PI/3) - 3.61cos(5PI/3))
+             =  40.00
+
+       Fr[2] =  32.5 -0 - 9.58*cos(2PI/3) + 3.61*sin(2PI/3) - i*(9.58*sin(2PI/3) + 3.61cos(2PI/3)) + 8.75*cos(4PI/3) -
+		0.72*sin(4PI/3) + i*(8.75*sin(4PI/3) + 0.72cos(4PI/3)) - 20.83*cos(2*PI) - i*20.83*sin(2*PI) +
+                8.75*cos(8PI/3) + 0.72*sin(8PI/3) + i*(8.75*sin(8PI/3) - 0.72cos(8PI/3)) - 9.58*cos(10PI/3) -
+		3.61*sin(10PI/3) - i*(9.58*sin(10PI/3) - 3.61cos(10PI/3))
+              = 20
+
+       Fr[3] =  32.5- 0 - 9.58*cos(PI) + 3.61*sin(PI) - i*(9.58*sin(PI) + 3.61cos(PI)) + 8.75*cos(PI*2) - 0.72*sin(PI*2) +
+	        i*(8.75*sin(PI*2) + 0.72cos(PI*2)) - 20.83*cos(3*PI) - i*20.83*sin(3*PI) + 8.75*cos(PI*4) +
+	        0.72*sin(PI*4) + i*(8.75*sin(PI*4) - 0.72cos(PI*4)) - 9.58*cos(PI*5) - 3.61*sin(PI*5) -
+	        i*(9.58*sin(PI*5) - 3.61cos(PI*5))
+              = 90
+
+       Fr[4] =  32.5 - 0 - 9.58*cos(4PI/3) + 3.61*sin(4PI/3) - i*(9.58*sin(4PI/3) + 3.61cos(4PI/3)) + 8.75*cos(8PI/3) -
+		0.72*sin(8PI/3) + i*(8.75*sin(8PI/3) + 0.72cos(8PI/3)) - 20.83*cos(4*PI) - i*20.83*sin(4*PI) +
+                8.75*cos(16PI/3) + 0.72*sin(16PI/3) + i*(8.75*sin(16PI/3) - 0.72cos(16PI/3)) - 9.58*cos(20PI/3) -
+		3.61*sin(20PI/3) - i*(9.58*sin(20PI/3) - 3.61cos(20PI/3))
+               = 5
+
+       Fr[5] = 32.5- 0 - 9.58*cos(5PI/3) + 3.61*sin(5PI/3) - i*(9.58*sin(5PI/3) + 3.61cos(5PI/3)) + 8.75*cos(10PI/3) -
+		0.72*sin(10PI/3) + i*(8.75*sin(10PI/3) + 0.72cos(10PI/3)) - 20.83*cos(5*PI) - i*20.83*sin(5*PI) +
+		8.75*cos(20PI/3) + 0.72*sin(20PI/3) + i*(8.75*sin(20PI/3) - 0.72cos(20PI/3)) - 9.58*cos(25PI/3) -
+		3.61*sin(25PI/3) - i*(9.58*sin(25PI/3) - 3.61cos(25PI/3))
+             = 29.99
