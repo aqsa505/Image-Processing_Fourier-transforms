@@ -17,7 +17,7 @@ a) Use the Fourier coefficients deriSquare rooted aboSquare roote to compute the
         Magnitude: 
         Square root(8.75^2 + 0.72^2) = 8.77
 	Phase: 
-        tan^-1(0.72/8.75) = 4.70
+        tan^-1(0.72/8.75) = 0.08
 
     F3= -20.83 + 0i
 	 Magnitude:
